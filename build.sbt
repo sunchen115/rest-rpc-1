@@ -12,8 +12,13 @@ site.settings
 
 site.includeScaladoc()
 
+site.SourceDirectory <<= target / "docs/site"
+
 ghpages.settings
 
 git.remoteRepo := "git@github.com:ThoughtWorksInc/rest-rpc.git"
 
 git.gitCurrentBranch := "master"
+
+LaikaPlugin.defaults
+
